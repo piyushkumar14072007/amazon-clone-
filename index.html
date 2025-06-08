@@ -1,0 +1,145 @@
+06.08 3:37 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #e3e6e6;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #131921;
+      color: white;
+      display: flex;
+      padding: 10px 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff9900;
+    }
+
+    .navbar input {
+      width: 50%;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://m.media-amazon.com/images/G/01/AmazonExports/Fuji/2021/May/Hero/Fuji_TallHero_D_1x._CB667158276_.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 15px;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .product h3 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .product p {
+      font-weight: bold;
+      color: #b12704;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #232f3e;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">amazon<span style="color:white;">.clone</span></div>
+    <input type="text" placeholder="Search products...">
+    <div class="nav-links">
+      <a href="#">Sign In</a>
+      <a href="#">Orders</a>
+      <a href="#">Cart</a>
+    </div>
+  </div>
+
+  <div class="hero"></div>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY218_.jpg" alt="Product 1">
+      <h3>Smartphone</h3>
+      <p>$499.99</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81eB+7+CkUL._AC_UY218_.jpg" alt="Product 2">
+      <h3>Headphones</h3>
+      <p>$29.99</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61d5fGduJPL._AC_UY218_.jpg" alt="Product 3">
+      <h3>Watch</h3>
+      <p>$199.99</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81fPKd-2AYL._AC_UY218_.jpg" alt="Product 4">
+      <h3>Backpack</h3>
+      <p>$39.99</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Amazon Clone. All rights reserved.</p>
+  </div>
+</body>
+</html>
